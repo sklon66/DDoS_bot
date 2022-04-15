@@ -38,7 +38,7 @@ bot.hears('check', async (ctx) => {
 
 bot.hears('exec', async ctx => {
     for (const comand of process.env.PROCESSES_START.split(" ")) {
-        shell.exec(`../comand`, {async:true});
+        shell.exec(`../${comand}`, {async:true});
     }
 })
 
